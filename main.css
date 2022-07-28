@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-dark-blue-opaque: hsl(213, 19%, 25%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--neutral-very-dark-blue);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Card */
+.card {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 35px;
+
+  background-color: var(--neutral-dark-blue);
+  border-radius: 20px;
+}
+
+.image-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-dark-blue-opaque);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--neutral-white);
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--neutral-medium-grey);
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--neutral-dark-blue-opaque);
+  color: var(--neutral-medium-grey);
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+
+input[type='submit'] {
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: all 0.2s ease-in;
+}
+
+input[type='submit']:hover {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.selected,
+.selected:hover {
+  background-color: var(--neutral-light-grey);
+  color: var(--neutral-white);
+}
