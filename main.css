@@ -90,6 +90,7 @@ p {
   height: 50px;
   border-radius: 50%;
   transition: all 0.2s ease-in;
+  margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -98,8 +99,13 @@ p {
   color: var(--neutral-white);
 }
 
+form {
+  width: 100%;
+}
+
 input[type='submit'] {
   height: 50px;
+  width: 100%;
   border: none;
   outline: none;
   background-color: var(--primary-orange);
