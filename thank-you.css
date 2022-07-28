@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-dark-blue-opaque: hsl(213, 19%, 25%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--neutral-very-dark-blue);
+}
+
+p {
+  text-align: center;
+  color: var(--neutral-light-grey);
+  word-spacing: 0.1em;
+}
+
+h1 {
+  text-align: center;
+  color: var(--neutral-white);
+  margin-bottom: 10px;
+}
+
+/* Card */
+.card {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 35px;
+
+  background-color: var(--neutral-dark-blue);
+  border-radius: 20px;
+}
+
+.score {
+  color: var(--primary-orange);
+  background-color: var(--neutral-dark-blue-opaque);
+  padding: 8px 24px;
+  border-radius: 20px;
+}
