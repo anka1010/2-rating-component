@@ -99,6 +99,11 @@ p {
   color: var(--neutral-white);
 }
 
+.btn-selected {
+  background-color: var(--neutral-medium-grey);
+  color: var(--neutral-white);
+}
+
 form {
   width: 100%;
 }
