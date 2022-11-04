@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <link rel="icon" href="images/favicon-32x32.png" type="image/png">
-  <script src="./main.js" defer></script>
   <title>Rate us!</title>
 </head>
 
@@ -21,16 +20,23 @@
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
         offering!</p>
     </div>
-    <div class="ratings">
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn">4</button>
-      <button class="btn">5</button>
+    <div>
+      <form action="./thank-you-state.html" method="GET">
+        <fieldset class="ratings">
+          <input class="radio-select" type="radio" name="rating" id="rating1" value="1">
+          <label class="rating-btn" for="rating1">1</label>
+          <input class="radio-select" type="radio" name="rating" id="rating2" value="2">
+          <label class="rating-btn" for="rating2">2</label>
+          <input class="radio-select" type="radio" name="rating" id="rating3" value="3">
+          <label class="rating-btn" for="rating3">3</label>
+          <input class="radio-select" type="radio" name="rating" id="rating4" value="4">
+          <label class="rating-btn" for="rating4">4</label>
+          <input class="radio-select" type="radio" name="rating" id="rating5" value="5">
+          <label class="rating-btn" for="rating5">5</label>
+        </fieldset>
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
     </div>
-    <form action="./thank-you-state.html">
-      <input type="submit" name="submit" id="submit" value="SUBMIT">
-    </form>
   </div>
 </body>
 
